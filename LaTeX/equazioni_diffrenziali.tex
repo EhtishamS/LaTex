@@ -1,0 +1,113 @@
+\documentclass[20pt]{article}
+\parindent 0px
+
+\begin{document}
+
+    \begin{center}
+        \begin{Large}
+            EQUAZIONI DIFFERENZIALI\\[10pt]
+        \end{Large}
+    \end{center}
+
+    \underline{Definizione}:\\[5pt]
+    Un equazione differenziale è un qualcosa che ha per incognita \underline{$y=f(x)$} e che contiene almeno una delle sue derivate.
+    $$y^{'}=5x \; (I \; oridine)$$
+
+    L'ordine di un equazione differenziale è l'ordine massimo     delle derivate che \. compaiono \. nell'equazione.
+    \\[5pt]
+    Soluzione generale o integrale generale: Soluzione di un         'equazione generale
+    \\[17pt]
+
+    \begin{center}
+    EQUAZIONE DIFFERENZIALE DI I ORDINE\\[10pt]
+    \end{center}
+    Forma generale:
+    $$y^{'}=f(x)$$
+    Esempio 1\\[10pt]
+    $y^{'}-x^2+x-2=0$\\
+    $y^{'} = x^2-x+2$\\
+    $y=\int x^2-x+2 dx = \frac{x^3}{3}-\frac{x^2}{2}+2x+c$\\[5pt]
+    
+    Esempio 2:\\[10pt]
+    \begin{large}
+        \begin{math}
+          \left\{
+            \begin{array}{l}
+              \frac{y^{'}-x}{x^2+1} = \frac{3}{x}\\
+              f(1)=0 \; (condizione \; iniziale)
+            \end{array}
+          \right.
+        \end{math}
+    \end{large}\\[5pt]
+    
+    \begin{large}
+        $\frac{y^{'}-x}{x^2+1} = \frac{3}{x} \rightarrow$ 
+        $y^{'}-x = 3 \frac{x^2+1}{x} \rightarrow$
+        $y^{'}=\frac{3(x^2+1)+x^2}{x} \rightarrow$
+        $y^{'}=\frac{4x^2+3}{x} $\\[5pt]
+        $y=\int{\frac{4x^2+3}{x} dx} \; = $
+        $\int{4x}dx + \int{\frac{3}{x} dx} \; = $
+        $2x^2+3 \ln{|x|}+c$\\
+    \end{large}
+    
+    Cerchiamo \underline{integrale particolare} applicando la condizione iniziale $f(1)=0$\\
+    
+    \begin{large}
+        $y = 2x^2 + 3 \ln{|x|} + c \rightarrow$
+        $ 0 = 2 + c$\\
+    \end{large}    
+    
+    Soluzione particolare finale:
+    \begin{large}
+        $$y=2x^2 + 3 \ln{|x|} -2 $$
+    \end{large}
+    \\ [24pt]
+    \begin{center}
+        EQUAZIONI DIFFERENZIALI A VARIABILI SEPARABILI
+    \end{center}
+    
+    Forma generale:\\
+    $$y^{'} = g(x) \; h(y)$$
+    $$\frac{dy}{dx} \; = \; g(x) \; h(y)$$
+    $$\int{\frac{1}{h(y)} dy} \; = \; \int{g(x)dx}$$
+    $g(x) \rightarrow \;$funzione di x\\
+    $f(x) \rightarrow \;$funzione di y\\[5pt]
+    
+    \underline{Definizione}: \\
+    A first order differential equation can be solved by separation of variables when it can be written as $y^{'} = g(x) \; h(y)$, where g and h are continous functions.\\
+    
+    Esempio:\\
+    
+    $y^{'} \; = 2x (y-1)^2 \rightarrow$
+    $\frac{dy}{dx} \; = \; 2x (y-1)^2 \rightarrow$
+    $\frac{1}{(y-1)^2}dy \; = \; 2x\;dx$\\
+    $\int{\frac{1}{(y-1)^2}} dy \; = \; \int{2x} \; dx \rightarrow$
+    $-\frac{1}{y-1} = x^2+c $
+    $$y \; = \; \frac{1}{-x^2+c}+1$$
+    \\[5pt]
+
+    \begin{center}
+        EQUAZIONI LINEARI DI PRIMO ORDINE
+    \end{center}
+    
+    Forma generale: 
+    $$y^{'} \; = \; a(x)y+b(x)$$
+    
+    I CASO: b(x) = 0 LINEARE OMOGENEA
+    $$y^{'} = a(x)y \rightarrow a \; variabili \; separabili$$\\
+    
+    II CASO: b(x) != 0  LINEARE NON OMOGENEA\\[5pt]
+    $y^{'} = -\frac{y}{x}+x$\\
+    
+    1) Risolvo l'omogenea associata\\
+    
+    $y^{'} = -\frac{y}{x} \rightarrow$
+    $ \frac{dy}{dx} = -\frac{1}{x}y \rightarrow $
+    $\int{\frac{1}{y}}dy \; = \; \int{-\frac{1}{y} dx \rightarrow}$
+    $\ln{|y|} \; = \; -\ln{|x|}+c$\\
+    
+    2) $y=k(x) \; \frac{1}{x} \rightarrow$
+    $k(x) \; \frac{1}{x} \; + \; k(x)(-\frac{1}{x^2}) \; = $
+    $\frac{-k(x)\frac{1}{x}}{x}$
+    
+\end{document}

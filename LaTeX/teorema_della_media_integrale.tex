@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+\parindent 0px
+
+\begin{document}
+
+TEOREMA DELLA MEDIA INTEGRALE\\
+Definizione\\
+Sia $f(x)$una funzione continua in $[a, b]$ allora $\exists \; z\in [a, b]\; t.c. \;f(z) = \frac{\int_a^b f(x) dx}{b-a}$, cioè ${\int_a^b f(x)dx = f(z)(b-a)}$
+\\[10pt]
+Dimostrazione\\
+Poiché per ipotesi, $f$ è continua in $[a, b]$, per il teorema di weirstrass essa assume max M e min m $m \le f(x) \le M \; \forall x \in [a, b]$ 
+\\[10pt]
+Se considero le funzioni $y=m$, $y=f(x)$, $y=M$, per proprietà 4 dei integrali definiti:
+$$ \int_a^b m \; dx \le \int_a^b f(x) dx \le \int_a^b \; M dx$$
+\\[10pt]
+Applicando la proprietà 5 dei integrali definiti si ottiene:
+$$ m(b-a) \le \int_a^b f(x) dx \le M(b-a)$$
+\\[10pt]
+Dividendo tutti i membri per (b-a) si ottiene:
+$$m \le \frac{\int_a^b f(x) dx}{b-a} \le M $$
+\\[10pt]
+Per il teorema dei valori intermedi, $f(x)$ assume tutti i valori compresi tra m e M $=> \exists \; z \; \in [a, b] \; t.c.$ 
+$$f(z) = \frac{\int_a^b f(x) dx}{b-a}$$
+\end{document}

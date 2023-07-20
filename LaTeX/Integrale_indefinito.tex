@@ -1,0 +1,21 @@
+\documentclass[11pt]{article}
+\parindent 0px % to not indent
+\usepackage{amsfonts, amssymb, amsmath}
+
+\begin{document}
+INTEGRALE \\
+Definizione\\
+$y= F(x)$ si dice primitiva di $y=f(x)$ in un intervallo $[a, b]$ se $F(x)$ è \. derivabile \. in $[a, b]$ e $F^{'}(x) = f(x)$ \\
+
+- Se $F(x)$ è una primitiva di $f(x) => F(x) + c$ è una primitiva di $f(x)$
+$$D[F(x)+c] = F^{'}(x)+0 = F^{'}(x)=f(x)$$
+
+- Viceversa, se $F(x)$ e $G(x)$ sono primitive di $f(x)$, allora $F(x) - G(x) = C$
+$$D[F(x)-G(x)] = F^{'}(x)-G^{'}(x) = f(x)-f(x) = 0 => F(x)-G(x) = C$$
+
+$=>$ se $F(x)$ è una primitiva di $f(x)$, allora $F(x)+c (c \in \mathbb{R})$ è un insieme di tutte e sole le primitive di $f(x)$.
+$$\int f(x) dx = F(x)+c$$
+
+Se una funzione è continua in $[a, b]$, allora ammette primitive nello stesso intervallo.
+
+\end{document}
